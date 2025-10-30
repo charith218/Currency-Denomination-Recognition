@@ -2,6 +2,12 @@ import streamlit as st
 import numpy as np
 import cv2
 from PIL import Image
+
+# Add the project root to the Python path
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from scanner.classifier import Predictor
 
 st.set_page_config(page_title="Currency Denomination Scanner", page_icon="💵", layout="centered")
