@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: currency-denomination-recognition
-    env: python
-    buildCommand: "./build.sh"
-    startCommand: "streamlit run app_streamlit.py --server.port $PORT --server.address 0.0.0.0"
-    healthCheckPath: /_stcore/health
-
